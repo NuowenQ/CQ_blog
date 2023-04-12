@@ -1,11 +1,13 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>CQ's blog | CQ's blog</title><meta name="author" content="Qian Nuowen"><meta name="copyright" content="Qian Nuowen"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="article">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>CQ's blog | CQ's blog</title><meta name="author" content="Qian Nuowen"><meta name="copyright" content="Qian Nuowen"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="The automated check out machine Table of Contents​						Team Formation———————————————————–3 ​															Application Description ​						Problem statement———————————————————3 ​						Project descript">
+<meta property="og:type" content="article">
 <meta property="og:title" content="CQ&#39;s blog">
 <meta property="og:url" content="https://nuowenq.github.io/CQ_blog/2023/04/12/Automated%20checkout%20machine%20project/index.html">
 <meta property="og:site_name" content="CQ&#39;s blog">
+<meta property="og:description" content="The automated check out machine Table of Contents​						Team Formation———————————————————–3 ​															Application Description ​						Problem statement———————————————————3 ​						Project descript">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://nuowenq.github.io/CQ_blog/img/monkey.jpeg">
 <meta property="article:published_time" content="2023-04-12T15:38:16.144Z">
-<meta property="article:modified_time" content="2023-04-12T15:38:16.243Z">
+<meta property="article:modified_time" content="2023-04-12T16:24:04.408Z">
 <meta property="article:author" content="Qian Nuowen">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://nuowenq.github.io/CQ_blog/img/monkey.jpeg"><link rel="shortcut icon" href="/CQ_blog/img/monkey.jpeg"><link rel="canonical" href="https://nuowenq.github.io/CQ_blog/2023/04/12/Automated%20checkout%20machine%20project/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/CQ_blog/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
@@ -53,8 +55,8 @@
   isPost: true,
   isHome: false,
   isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2023-04-12 23:38:16'
+  isToc: true,
+  postUpdate: '2023-04-13 00:24:04'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -158,4 +160,388 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/CQ_blog/img/monkey.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/CQ_blog/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/CQ_blog/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/CQ_blog/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/CQ_blog/"><i class="fa-fw fas fa-home"></i><span> Main</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> Blogs</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/CQ_blog/categories/"><i class="fa-fw fa fa-archive"></i><span> categories</span></a></li><li><a class="site-page child" href="/CQ_blog/tags/"><i class="fa-fw fa fa-tags"></i><span> tags</span></a></li><li><a class="site-page child" href="/CQ_blog/archives/"><i class="fa-fw fa fa-folder-open"></i><span> archieves</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> life</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/CQ_blog/shuoshuo/"><i class="fa-fw fa fa-comments-o"></i><span> sharing</span></a></li><li><a class="site-page child" href="/CQ_blog/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> album</span></a></li><li><a class="site-page child" href="/CQ_blog/music/"><i class="fa-fw fa fa-music"></i><span> music</span></a></li><li><a class="site-page child" href="/CQ_blog/movies/"><i class="fa-fw fas fa-video"></i><span> movies</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/CQ_blog/links/"><i class="fa-fw fa fa-link"></i><span> links</span></a></div><div class="menus_item"><a class="site-page" href="/CQ_blog/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> comment</span></a></div><div class="menus_item"><a class="site-page" href="/CQ_blog/about/"><i class="fa-fw fas fa-heart"></i><span> about</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/CQ_blog/" title="CQ's blog"><span class="site-name">CQ's blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/CQ_blog/"><i class="fa-fw fas fa-home"></i><span> Main</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> Blogs</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/CQ_blog/categories/"><i class="fa-fw fa fa-archive"></i><span> categories</span></a></li><li><a class="site-page child" href="/CQ_blog/tags/"><i class="fa-fw fa fa-tags"></i><span> tags</span></a></li><li><a class="site-page child" href="/CQ_blog/archives/"><i class="fa-fw fa fa-folder-open"></i><span> archieves</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> life</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/CQ_blog/shuoshuo/"><i class="fa-fw fa fa-comments-o"></i><span> sharing</span></a></li><li><a class="site-page child" href="/CQ_blog/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> album</span></a></li><li><a class="site-page child" href="/CQ_blog/music/"><i class="fa-fw fa fa-music"></i><span> music</span></a></li><li><a class="site-page child" href="/CQ_blog/movies/"><i class="fa-fw fas fa-video"></i><span> movies</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/CQ_blog/links/"><i class="fa-fw fa fa-link"></i><span> links</span></a></div><div class="menus_item"><a class="site-page" href="/CQ_blog/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> comment</span></a></div><div class="menus_item"><a class="site-page" href="/CQ_blog/about/"><i class="fa-fw fas fa-heart"></i><span> about</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">No title</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-04-12T15:38:16.144Z" title="Created 2023-04-12 23:38:16">2023-04-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-04-12T15:38:16.243Z" title="Updated 2023-04-12 23:38:16">2023-04-12</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://nuowenq.github.io/CQ_blog">Qian Nuowen</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://nuowenq.github.io/CQ_blog/2023/04/12/Automated%20checkout%20machine%20project/">https://nuowenq.github.io/CQ_blog/2023/04/12/Automated%20checkout%20machine%20project/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/CQ_blog/img/monkey.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/CQ_blog/2023/04/05/Leetcode%20-%20575%20%20Distribute%20Candies/" title="Leetcode - 575  Distribute Candies."><img class="cover" src="/CQ_blog/img/Leetcode.jpg" onerror="onerror=null;src='/CQ_blog/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Leetcode - 575  Distribute Candies.</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/CQ_blog/img/monkey.jpeg" onerror="this.onerror=null;this.src='/CQ_blog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Qian Nuowen</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/CQ_blog/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/CQ_blog/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/CQ_blog/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/NuowenQ/CQ_blog" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://blog.csdn.net/mjh1667002013" target="_blank" title="CSDN"><i class="fa fa-book-open"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=728831102&amp;website=www.oicqzone.com" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="mailto:1976083684@qq.com" target="_blank" title="Email"><i class="fas fa-envelope-open-text"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/CQ_blog/2023/04/12/Automated%20checkout%20machine%20project/" title="No title">No title</a><time datetime="2023-04-12T15:38:16.144Z" title="Created 2023-04-12 23:38:16">2023-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CQ_blog/2023/04/05/Leetcode%20-%20575%20%20Distribute%20Candies/" title="Leetcode - 575  Distribute Candies."><img src="/CQ_blog/img/Leetcode.jpg" onerror="this.onerror=null;this.src='/CQ_blog/img/404.jpg'" alt="Leetcode - 575  Distribute Candies."/></a><div class="content"><a class="title" href="/CQ_blog/2023/04/05/Leetcode%20-%20575%20%20Distribute%20Candies/" title="Leetcode - 575  Distribute Candies.">Leetcode - 575  Distribute Candies.</a><time datetime="2023-04-05T15:42:46.000Z" title="Created 2023-04-05 23:42:46">2023-04-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CQ_blog/2023/04/05/%E8%B4%B4%E5%BF%83%E4%BF%9D%E5%A7%86%E7%BA%A7-Hexo-github-page-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E3%80%82/" title="贴心保姆级 Hexo &amp; github page 个人博客搭建教程。"><img src="/CQ_blog/img/HG.jpeg" onerror="this.onerror=null;this.src='/CQ_blog/img/404.jpg'" alt="贴心保姆级 Hexo &amp; github page 个人博客搭建教程。"/></a><div class="content"><a class="title" href="/CQ_blog/2023/04/05/%E8%B4%B4%E5%BF%83%E4%BF%9D%E5%A7%86%E7%BA%A7-Hexo-github-page-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E3%80%82/" title="贴心保姆级 Hexo &amp; github page 个人博客搭建教程。">贴心保姆级 Hexo &amp; github page 个人博客搭建教程。</a><time datetime="2023-04-05T15:42:46.000Z" title="Created 2023-04-05 23:42:46">2023-04-05</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Qian Nuowen</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/CQ_blog/js/utils.js"></script><script src="/CQ_blog/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/CQ_blog/img/monkey.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/CQ_blog/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/CQ_blog/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/CQ_blog/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/CQ_blog/"><i class="fa-fw fas fa-home"></i><span> Main</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> Blogs</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/CQ_blog/categories/"><i class="fa-fw fa fa-archive"></i><span> categories</span></a></li><li><a class="site-page child" href="/CQ_blog/tags/"><i class="fa-fw fa fa-tags"></i><span> tags</span></a></li><li><a class="site-page child" href="/CQ_blog/archives/"><i class="fa-fw fa fa-folder-open"></i><span> archieves</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> life</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/CQ_blog/shuoshuo/"><i class="fa-fw fa fa-comments-o"></i><span> sharing</span></a></li><li><a class="site-page child" href="/CQ_blog/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> album</span></a></li><li><a class="site-page child" href="/CQ_blog/music/"><i class="fa-fw fa fa-music"></i><span> music</span></a></li><li><a class="site-page child" href="/CQ_blog/movies/"><i class="fa-fw fas fa-video"></i><span> movies</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/CQ_blog/links/"><i class="fa-fw fa fa-link"></i><span> links</span></a></div><div class="menus_item"><a class="site-page" href="/CQ_blog/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> comment</span></a></div><div class="menus_item"><a class="site-page" href="/CQ_blog/about/"><i class="fa-fw fas fa-heart"></i><span> about</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/CQ_blog/" title="CQ's blog"><span class="site-name">CQ's blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/CQ_blog/"><i class="fa-fw fas fa-home"></i><span> Main</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> Blogs</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/CQ_blog/categories/"><i class="fa-fw fa fa-archive"></i><span> categories</span></a></li><li><a class="site-page child" href="/CQ_blog/tags/"><i class="fa-fw fa fa-tags"></i><span> tags</span></a></li><li><a class="site-page child" href="/CQ_blog/archives/"><i class="fa-fw fa fa-folder-open"></i><span> archieves</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> life</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/CQ_blog/shuoshuo/"><i class="fa-fw fa fa-comments-o"></i><span> sharing</span></a></li><li><a class="site-page child" href="/CQ_blog/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> album</span></a></li><li><a class="site-page child" href="/CQ_blog/music/"><i class="fa-fw fa fa-music"></i><span> music</span></a></li><li><a class="site-page child" href="/CQ_blog/movies/"><i class="fa-fw fas fa-video"></i><span> movies</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/CQ_blog/links/"><i class="fa-fw fa fa-link"></i><span> links</span></a></div><div class="menus_item"><a class="site-page" href="/CQ_blog/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> comment</span></a></div><div class="menus_item"><a class="site-page" href="/CQ_blog/about/"><i class="fa-fw fas fa-heart"></i><span> about</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">No title</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-04-12T15:38:16.144Z" title="Created 2023-04-12 23:38:16">2023-04-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-04-12T16:24:04.408Z" title="Updated 2023-04-13 00:24:04">2023-04-13</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="The-automated-check-out-machine"><a href="#The-automated-check-out-machine" class="headerlink" title="The automated check out machine"></a>The automated check out machine</h1><p><img src="C:\Users\qiann\Downloads\66ee21cf-479e-47c2-b854-b22145b440cb.jpeg"></p>
+<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><p>​						<strong>Team Formation</strong>———————————————————–3</p>
+<p>​															<strong>Application Description</strong></p>
+<p>​						Problem statement———————————————————3</p>
+<p>​						Project description———————————————————-3</p>
+<p>​						<strong>Marketing Plan</strong>————————————————————–4</p>
+<p>​															 <strong>Project Implementation</strong></p>
+<p>​						   Implementation Concept——————————————–5-7</p>
+<p>​							Program Design———————————————————8</p>
+<p>​							Software Coding——————————————————–9-14</p>
+<p>​							Program Testing——————————————————–15</p>
+<p>​					<strong>Challenges</strong>———————————————————————16-17</p>
+<p>​					<strong>Creativity and Innovation</strong>———————————————-17-22</p>
+<p>​					<strong>Conclusion</strong>———————————————————————23</p>
+<p>​					<strong>Reference</strong>———————————————————————–23</p>
+<p><img src="./media/image2.jpeg" style="width:3.47153in;height:2.60347in"
+alt="A picture containing floor, indoor Description automatically generated" /></p>
+<h1 id="Team-Formation"><a href="#Team-Formation" class="headerlink" title="Team Formation"></a><strong>Team Formation</strong></h1><p>Nuowen: Data Training, Algorithm Design, Program Structure Design,<br>PowerPoint content and Report with content with design.</p>
+<p>Zhe Ming: Mechanical Design, Program Structure Design (Testing of the<br>input and output devices), logistics, PowerPoint content and Report with<br>content with design.</p>
+<h1 id="Application-Description"><a href="#Application-Description" class="headerlink" title="Application Description"></a><strong>Application Description</strong></h1><h2 id="Problem-Statement"><a href="#Problem-Statement" class="headerlink" title="Problem Statement"></a><strong><u>Problem Statement</u></strong></h2><p>If there is an invention is implemented, there must be steps and<br>procedures to follow and comply with. Similar to the existing<br>self-checkout station, there are standard procedures to follow up on<br>before they can take the purchased items and leave the supermarket.<br>However, people can make mistakes while following the steps in which<br>they don’t have an alternating channel to return to the previous step<br>which may confuse the customers. Also, customers need to place the<br>scanned items onto a platform before they can scan the next item, which<br>sometimes can cause an error in this step as the platform is not so<br>sensitive to detect whether the scanned item has been put onto it or not<br>sometimes. All these minor errors can cause huge confusion for the users<br>which is not user-friendly enough.</p>
+<h2 id="Project-Description"><a href="#Project-Description" class="headerlink" title="Project Description"></a><strong><u>Project Description</u></strong></h2><p>Based on the problem statement described above, we came out with the<br>idea of a machine that works with a conveyor belt that can identify the<br>purchased items using a camera programmed to do machine vision scanning.<br>The conveyor belt will deliver the purchased items to the scanned area<br>and the camera will capture the items and show the price on the display<br>to show the customers how much they need to pay.</p>
+<h1 id="Marketing-Plan"><a href="#Marketing-Plan" class="headerlink" title="Marketing Plan"></a><strong>Marketing Plan</strong></h1><p>The targeted users are the existing supermarket. There are around 23<br>famous supermarket brands in Singapore, including NTUC FairPrice, Sheng<br>Siong and Cold Storage, and convenience stores and local shops. In total<br>round up to a few thousand of such stores in Singapore. Our project will<br>significantly benefit them by simplifying the customer self-checkout<br>process and making payments. This directly solves the problem of people<br>waiting to complete the payment, resulting in a long and troublesome<br>queue. </p>
+<p>This project aims not only to provide these target users with a machine<br>that automatically detects the item and calculates the price. In order<br>to identify the net weight difference for a similar product, a more<br>precise model is needed to be trained in order to detect the difference.<br>Therefore, we can provide the target users data training services with a<br>certain amount of subscription fee required. Our data training service<br>aims to provide users with the most up-to-date and accurate data so it<br>will be convenient for supermarkets to adopt such technology.</p>
+<p><strong>Penetration rate:</strong> The penetration rate shows the extent to which the<br>target users have adopted the product. We would like to achieve a<br>penetration rate of 50%.  Using the formula: <strong>Penetration rate &#x3D; Number<br>of adopters&#x2F; Total market size * 100 We have calculated that we should<br>expect a number of adopters.</strong> From this formula, we have calculated<br>that in order to obtain a penetration rate of  50%, a number of 1500<br>adopters are expected.</p>
+<h1 id="Project-Implementation"><a href="#Project-Implementation" class="headerlink" title="Project Implementation"></a><strong>Project Implementation</strong></h1><h2 id="Implementation-Concept"><a href="#Implementation-Concept" class="headerlink" title="Implementation Concept"></a><strong><u>Implementation Concept</u></strong></h2><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Components</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="./media/image3.png"
+style="width:1.23681in;height:1.125in" />Programming DC motor</td>
+<td><p>Output devices - It is attached to a wheel that is used to
+operate the conveyor belt.</p>
+<p>It is implemented to deliver the items the customers will purchase to
+the scanning area.</p></td>
+</tr>
+<tr class="even">
+<td><img src="./media/image4.png"
+style="width:0.72708in;height:1.84861in" />Infra-red sensor</td>
+<td>Input devices – It is used to sense the existence of the customers
+and hint instruction to the customers on the display.</td>
+</tr>
+<tr class="odd">
+<td><img src="./media/image5.png"
+style="width:1.06667in;height:1.12083in" />Controlling Continuous
+Rotation servo motor – HS 311</td>
+<td>Output devices – It is used to open/close the gate and make sure the
+purchased items are within the control.</td>
+</tr>
+<tr class="even">
+<td><img src="./media/image6.png"
+style="width:1.7in;height:1.32639in" />Buzzer Program</td>
+<td>Output devices – It is used to alert the customers to load their
+items into the machine's entrance. Letting customers have a better idea
+when the stages of the processes are switching.</td>
+</tr>
+<tr class="odd">
+<td><img src="./media/image7.png"
+style="width:1.41667in;height:1.33681in" />Logitech camera</td>
+<td><p>Input device  - It is used to capture the image of the items for
+the microprocessor to identify the items and calculate the price.</p>
+<p>It is implemented to capture the image of the items that the customer
+will purchase and send the item’s data to the program.</p></td>
+</tr>
+<tr class="even">
+<td><p><img src="./media/image8.png"
+style="width:1.77361in;height:1.35833in" />Raspberry Pi 3b</p>
+<p>with CricketHat</p></td>
+<td><p>I/O interface - Used to send the signal and control the
+interaction between the input and output devices according to the codes
+to instruct the machine.</p>
+<p>It is implemented to program to do the calculation and run the code
+based on the item’s data</p></td>
+</tr>
+<tr class="odd">
+<td><img src="./media/image9.png"
+style="width:2.01667in;height:1.35319in" />SenseHat</td>
+<td><p>Input &amp; Output devices - It is used to display the message
+and show the customers what is going on.</p>
+<p>It is implemented to show the relevant information based on what the
+customers have bought such as the name of the item and the total price
+of the item.</p></td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="./media/image10.jpeg" style="width:1.22969in;height:0.78646in"
+alt="A picture containing indoor Description automatically generated" /></p>
+<p><img src="./media/image11.png" style="width:0.45349in;height:0.42803in"
+alt="A picture containing electronics, camera, projector Description automatically generated" /></p>
+<p><img src="./media/image2.jpeg" style="width:4.125in;height:3.09375in"
+alt="A picture containing floor, indoor Description automatically generated" /></p>
+<p><img src="./media/image12.png" style="width:0.44362in;height:1.12789in"
+alt="A picture containing text, loudspeaker Description automatically generated" /><img src="./media/image13.jpeg" style="width:1.52616in;height:0.63426in"
+alt="A picture containing text, indoor, electronics, printer Description automatically generated" /><img src="./media/image14.jpeg" style="width:2.54545in;height:2.33355in"
+alt="A picture containing floor Description automatically generated" /><img src="./media/image15.jpeg" style="width:0.9994in;height:0.74965in"
+alt="A picture containing graphical user interface Description automatically generated" /><img src="./media/image16.jpeg"
+style="width:1.21354in;height:0.94182in" /><img src="./media/image17.jpeg" style="width:1.04583in;height:0.67708in"
+alt="A picture containing floor, green Description automatically generated" /></p>
+<p><img src="./media/image18.png" style="width:0.55682in;height:0.58509in"
+alt="A picture containing text Description automatically generated" /><img src="./media/image19.jpeg" style="width:1.02778in;height:0.77083in"
+alt="A picture containing text, floor, indoor Description automatically generated" /><img src="./media/image20.png"
+style="width:0.87225in;height:0.68056in" /><img src="./media/image21.jpeg" style="width:1.34259in;height:0.66751in"
+alt="A picture containing ground Description automatically generated" /></p>
+<h2 id="lt-img-src-x3D-”-x2F-media-x2F-image22-png”"><a href="#lt-img-src-x3D-”-x2F-media-x2F-image22-png”" class="headerlink" title="&lt;img src&#x3D;”.&#x2F;media&#x2F;image22.png”"></a>&lt;img src&#x3D;”.&#x2F;media&#x2F;image22.png”</h2><p>style&#x3D;”width:6.85126in;height:8.73079in” &#x2F;&gt;<strong><u>Program Design</u></strong></p>
+<h2 id="Software-Coding"><a href="#Software-Coding" class="headerlink" title="Software Coding"></a><strong><u>Software Coding</u></strong></h2><p><img src="./media/image23.png"
+style="width:6.22153in;height:2.99514in" /></p>
+<p><img src="./media/image24.png" style="width:4.08796in;height:4.62876in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<p><img src="./media/image25.png" style="width:4.51948in;height:3.44813in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<p><img src="./media/image26.png" style="width:5.44029in;height:2.33854in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<p><img src="./media/image27.png" style="width:5.97907in;height:1.63021in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<p><img src="./media/image28.png" style="width:4.78001in;height:4.54444in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<p><img src="./media/image29.png" style="width:5.66875in;height:4.48333in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<p><img src="./media/image30.png"
+style="width:8.48702in;height:4.30588in" /></p>
+<p><img src="./media/image31.jpeg" style="width:4.19632in;height:5.05576in"
+alt="Text Description automatically generated" /></p>
+<p><img src="./media/image32.jpeg" style="width:4.64244in;height:3.70552in"
+alt="Text Description automatically generated" /></p>
+<p><img src="./media/image33.jpeg" style="width:5.18405in;height:3.39234in"
+alt="Text Description automatically generated" /></p>
+<p><img src="./media/image34.png" style="width:3.8007in;height:3.36689in"
+alt="Text Description automatically generated" /></p>
+<p><img src="./media/image35.jpeg" style="width:6.5in;height:0.95278in"
+alt="Text Description automatically generated" /></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><h2 id="Program-Testing"><a href="#Program-Testing" class="headerlink" title="Program Testing"></a><strong><u>Program Testing</u></strong></h2><p>Program testing is very important for every new product to test the<br>success rate of each item in the supermarket to ensure the system will<br>not identify the wrong item. If it is done so, we have to train the data<br>of the specific item more to ensure accuracy.</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th><p>Test</p>
+<p>1</p></th>
+<th><p>Test</p>
+<p>2</p></th>
+<th><p>Test</p>
+<p>3</p></th>
+<th><p>Test</p>
+<p>4</p></th>
+<th><p>Test</p>
+<p>5</p></th>
+<th><p>Test</p>
+<p>6</p></th>
+<th><p>Test</p>
+<p>7</p></th>
+<th><p>Test</p>
+<p>8</p></th>
+<th><p>Test</p>
+<p>9</p></th>
+<th>Test 10</th>
+<th><p>Total</p>
+<p>Success</p>
+<p>Rate</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>G POCKY GRN TEA 35G</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>10/10</td>
+</tr>
+<tr class="even">
+<td>YUPI G/CDY H/BR 110G</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>10/10</td>
+</tr>
+<tr class="odd">
+<td>L STAX-EXTRA CHSE135</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>10/10</td>
+</tr>
+<tr class="even">
+<td>L HOT&amp;SP PTT CHIP48G</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>10/10</td>
+</tr>
+<tr class="odd">
+<td>LM SUPR BLAL I/N 65G</td>
+<td><span class="math display">×</span></td>
+<td>✓</td>
+<td><span class="math display">×</span></td>
+<td>✓</td>
+<td><span class="math display">×</span></td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>7/10</td>
+</tr>
+<tr class="even">
+<td>POKKA PEACHTEA500ML</td>
+<td>✓</td>
+<td><span class="math display">×</span></td>
+<td><span class="math display">×</span></td>
+<td>✓</td>
+<td>✓</td>
+<td><span class="math display">×</span></td>
+<td><span class="math display">×</span></td>
+<td><span class="math display">×</span></td>
+<td><span class="math display">×</span></td>
+<td><span class="math display">×</span></td>
+<td>3/10</td>
+</tr>
+</tbody>
+</table>
+We analyse and realize that the problem may be the similarity in
+external features between the Pokka peach tea and the L STAX ETRA
+CHSE135. And there are more training data about item L STAX-EXTRA
+CHSE135.
+
+<h1 id="Challenges"><a href="#Challenges" class="headerlink" title="Challenges"></a><strong>Challenges</strong></h1><p>There are several problems that we have encountered during the process.</p>
+<p>Firstly, we have encountered problems regarding the design problem of<br>the prototype.</p>
+<blockquote>
+<p><img src="./media/image36.jpeg"
+style="width: 1.93056in; height: in; zoom: 200%;" /></p>
+<p><img src="./media/image37.png"
+style="width:5in;height:2in" /></p>
+<p><img src="./media/image38.png"
+style="width: 1.50833in; height: 1.61667in; zoom: 200%;" /></p>
+</blockquote>
+<img src="./media/image41.png" style="width: 1.50833in; height: 1.61667in; zoom: 200%;" />
+
+
+<p>One of the design problems is that we found it very difficult for the roller<br>and belt to work together due to the lack of friction in between. So, we<br>have changed to wrap the roller with a bunch of rubber bands to increase<br>the friction to ensure the roller can push the belt forward.</p>
+<p>The other design problem is that connect the DC motor with the roller.<br>The original design is to connect the roller with the DC motor using hot<br>glue, but we found it is not very efficient as the connection point will<br>loosen after a few rounds of testing. The changes we have made are<br>connecting the wheels attached with satay sticks to ensure the conveyor<br>belt can run completely smooth as the satay sticks are perfectly matched<br>with the fluting medium of the cupboard.</p>
+<p>The second technical problem is that we found it very difficult to find<br>a suitable computer vision model to train. Thus, it is very<br>time-consuming as we must keep trying different models until we find the<br>most suitable model.</p>
+<p>Lastly, it is very tedious to train the model and set up the process<br>whenever we want to do the testing. Training the data including taking<br>pictures of the items in different orientations and postures and doing<br>data labelling by setting rectangular regions over the label items.</p>
+<p><img src="./media/image42.png"
+style="width: 1.37986in; height: 1.61667in; zoom: 200%;" /></p>
+<p><img src="./media/image43.png"
+style="width: 2.80347in; height: 1.84028in; zoom: 200%;" /></p>
+<h1 id="Creativity-and-Innovation"><a href="#Creativity-and-Innovation" class="headerlink" title="Creativity and Innovation"></a><strong>Creativity and Innovation</strong></h1><h2 id="Creativity"><a href="#Creativity" class="headerlink" title="Creativity"></a><strong><u>Creativity</u></strong></h2><p><img src="./media/image44.jpeg" style="width:3in;height:4.15903in"
+alt="A picture containing floor, box, indoor Description automatically generated" /></p>
+<p><img src="./media/image45.jpeg" style="width:4in;height:3in"
+alt="A picture containing floor Description automatically generated" /></p>
+<p><img src="./media/image46.jpeg" style="width:5in;height:in"
+alt="A picture containing floor Description automatically generated" /></p>
+<p><img src="./media/image47.jpeg" style="width:3in;height:in"
+alt="A picture containing floor, indoor Description automatically generated" /></p>
+<p><img src="./media/image48.jpeg" style="width:4in;height:in"
+alt="A picture containing floor, indoor Description automatically generated" /></p>
+<p><img src="./media/image49.jpeg" style="width:4in;height:in"
+alt="A picture containing floor, wall, indoor Description automatically generated" /></p>
+<h2 id="Innovation"><a href="#Innovation" class="headerlink" title="Innovation"></a><strong><u>Innovation</u></strong></h2><p><img src="./media/image50.jpg"
+style="width:6.51389in;height:6in" /></p>
+<p><img src="./media/image52.jpg"
+style="width:6.48056in;height:5in" /></p>
+<p><img src="./media/image53.jpeg"
+style="width:6.50694in;height:4in" /></p>
+<p><img src="./media/image55.jpeg"
+style="width:6.50694in;height:4in" /></p>
+<p><img src="./media/image56.jpg"
+style="width:6.1875in;height:4in" /></p>
+<p><img src="./media/image59.jpeg"
+style="width:6.1875in;height:4in" /></p>
+<p><img src="./media/image62.jpeg"
+style="width:6.50243in;height:4in" /></p>
+<p><img src="./media/image2.jpeg"
+style="width:6.50243in;height:6in" /></p>
+<h3 id="Machine-vision"><a href="#Machine-vision" class="headerlink" title="Machine vision:"></a>Machine vision:</h3><p>One of the innovative ideas in solving the issue we are working on is<br>that we make use of one of the machine learning technologies - computer<br>vision provided by the TensorFlow lite python API. To detect the name of<br>the items and calculate the price.</p>
+<p>TensorFlow Lite supports a variety of object detection models, for<br>example,e the region-based framework (R-FCN).</p>
+<p>TensorFlow lite is a lightweight version of TensorFlow that is designed<br>for mobile and embedded devices. It enables on-device machine learning<br>inference with low latency and high performance. Therefore, we feel it<br>is suitable to be implemented on the Raspberry Pi operating system.</p>
+<p>Generally, the object detection task is carried out in three steps:</p>
+<ul>
+<li>Generates the small segments in the input as shown in the image below.<br>As you can see, the large set of bounding boxes are crossing the full<br>image.</li>
+</ul>
+<blockquote>
+<p><img src="./media/image65.png" style="width:4.32569in;height:1.85764in"
+alt="A collage of a cat Description automatically generated with medium confidence" /></p>
+</blockquote>
+<ul>
+<li>Feature extraction with CNN is carried out for each segmented<br>rectangular area to predict whether the rectangle contains a valid<br>object.</li>
+</ul>
+<blockquote>
+<p><img src="./media/image66.jpeg" style="width:1.85064in;height:1.8in"
+alt="A picture containing building, cage, pink, tiled Description automatically generated" /></p>
+</blockquote>
+<ul>
+<li>Overlapping boxes are combined into a single bounding rectangle<br>(Non-Maximum Suppression) now a cat is detected and localised.</li>
+</ul>
+<p><img src="./media/image67.jpeg" style="width:1.52222in;height:1.45833in"
+alt="A cat with its mouth open Description automatically generated with medium confidence" /></p>
+<p>Here is a clear explanation of how we have modified and developed such<br>technology and apply it to solve our problem:</p>
+<ol>
+<li><p><strong>Object labelling</strong>: In order to let the computer recognize the<br>items which are within our concerns, the first step is to take<br>pictures and label the objects in the pictures in different<br>positions and lighting conditions. For this step, I used “labelling”<br>to label the objects.</p>
+</li>
+<li><p><strong>Model conversion</strong>: The object detection model is trained using<br>TensorFlow and then converted to TensorFlow Lite format. This<br>conversion process optimises the model for mobile devices and<br>reduces the file size, making it easier to deploy. After labelling<br>the pictures, I then use this google collab published by the company<br>TensorFlow to generate the model.</p>
+</li>
+<li><p><strong>Input preprocessing</strong>: The input image is resized and normalised<br>before being fed into the model. The normalisation process helps to<br>improve the accuracy of the model.</p>
+</li>
+<li><p><strong>Inference</strong>: The TensorFlow Lite interpreter runs the optimized<br>model on the input image and generates the output, which includes<br>the bounding boxes and class scores for each detected object.</p>
+</li>
+<li><p><strong>Postprocessing</strong>: The output from the model is post processed to<br>filter out low-confidence detections and perform non-maximum<br>suppression to remove overlapping bounding boxes.</p>
+</li>
+<li><p><strong>Display</strong>: The final results, including the bounding boxes and<br>class labels, are displayed on the screen.</p>
+</li>
+</ol>
+<p>TensorFlow Lite offers a high-level API for object detection that makes<br>it easy to run object detection models on mobile devices. It also<br>provides low-level APIs for advanced users who want to customize their<br>object detection pipeline.</p>
+<p>Object detection is one of the important applications of computer vision<br>and is used in many real-world scenarios. TensorFlow Lite supports a<br>variety of object detection models, including single-shot detection<br>(SSD) and region-based fully convolutional networks (R-CNN).</p>
+<p>This is the example for our project when the camera scans a single item.</p>
+<p><img src="./media/image68.jpeg"
+style="width:5.05278in;height:2.3625in" /><img src="./media/image69.jpeg"
+style="width:5.05278in;height:2.3625in" /></p>
+<p><img src="./media/image70.jpg"
+style="width:5.60486in;height:2.52083in" /><img src="./media/image71.jpeg"
+style="width:5.60486in;height:2.52083in" />This is the example for our<br>project when the camera scan two items.</p>
+<p>This is the example for our project when the camera scans three items.</p>
+<p><img src="./media/image72.jpg"
+style="width:5.58958in;height:2.42708in" /><img src="./media/image74.jpeg"
+style="width:5.58958in;height:2.42708in" /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a><strong>Conclusion</strong></h1><p>In conclusion, installing an automated checkout system in supermarkets<br>can have a number of positive effects on both the clientele and the<br>company. This cutting-edge solution can improve the checkout process,<br>saving customers important time and delivering a faster, more convenient<br>shopping experience in response to the growing need for efficiency and<br>convenience. On the business side, the automation of checkout procedures<br>can result in shorter client wait times and higher customer satisfaction<br>levels. Furthermore, the inclusion of cutting-edge technology in<br>checkout machines can deliver useful information and insights that can<br>be used to optimize processes and enhance the shopping experience as a<br>whole. Overall, the automated checkout device is a wise investment that<br>can help the business and its clients greatly.</p>
+<h1 id="youtube-demo"><a href="#youtube-demo" class="headerlink" title="youtube demo"></a>youtube demo</h1><p><a target="_blank" rel="noopener" href="https://youtube.com/watch?v=QSbvY2JfQFA&feature=shares">https://youtube.com/watch?v=QSbvY2JfQFA&amp;feature=shares</a> (normal condition)</p>
+<p><a target="_blank" rel="noopener" href="https://youtube.com/watch?v=z2kWrxTw9ns&feature=shares">https://youtube.com/watch?v=z2kWrxTw9ns&amp;feature=shares</a> (error condition)</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a><strong>Reference</strong></h1><p>TensorFlow lite official tutorial -<br><a target="_blank" rel="noopener" href="https://youtube.com/watch?v=-ZyFYniGUsw&amp;feature=shares">https://youtube.com/watch?v=-ZyFYniGUsw&amp;feature=shares</a></p>
+<p>Introduction to object detection<br>-<a target="_blank" rel="noopener" href="https://youtube.com/watch?v=mNjXEybFn98&amp;feature=shares">https://youtube.com/watch?v=mNjXEybFn98&amp;feature=shares</a></p>
+<p>Reference of making the conveyor belt - <a target="_blank" rel="noopener" href="https://youtu.be/8Vnoso8rhaw">https://youtu.be/8Vnoso8rhaw</a></p>
+<p>Official google colab for data training. -<br><a target="_blank" rel="noopener" href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFdrU1pBandkdFFyQ2ZyN2VDeTI5XzRyZUVuUXxBQ3Jtc0trUFdXOTJoOXpFdFQ1TlI2M1hTbDBHX0JfR2V3MkF6TWxDeUs1QTJ6RWd4VkgxQVFicE1KM2JoajBoRUFJNlhMbGxNRFp0ZUJiWkxjRGw5bXdQMi16R0FjV3drWElWcFo3VUYwakVKY3RfYjlnOTdjbw&q=https://goo.gle/3ocbqmI&v=-ZyFYniGUsw">https://goo.gle/3ocbqmI</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://nuowenq.github.io/CQ_blog">Qian Nuowen</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://nuowenq.github.io/CQ_blog/2023/04/12/Automated%20checkout%20machine%20project/">https://nuowenq.github.io/CQ_blog/2023/04/12/Automated%20checkout%20machine%20project/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/CQ_blog/img/monkey.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/CQ_blog/2023/04/05/Leetcode%20-%20575%20%20Distribute%20Candies/" title="Leetcode - 575  Distribute Candies."><img class="cover" src="/CQ_blog/img/Leetcode.jpg" onerror="onerror=null;src='/CQ_blog/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Leetcode - 575  Distribute Candies.</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/CQ_blog/img/monkey.jpeg" onerror="this.onerror=null;this.src='/CQ_blog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Qian Nuowen</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/CQ_blog/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/CQ_blog/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/CQ_blog/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/NuowenQ/CQ_blog" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://blog.csdn.net/mjh1667002013" target="_blank" title="CSDN"><i class="fa fa-book-open"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=728831102&amp;website=www.oicqzone.com" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="mailto:1976083684@qq.com" target="_blank" title="Email"><i class="fas fa-envelope-open-text"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#The-automated-check-out-machine"><span class="toc-number">1.</span> <span class="toc-text">The automated check out machine</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Table-of-Contents"><span class="toc-number">2.</span> <span class="toc-text">Table of Contents</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Team-Formation"><span class="toc-number">3.</span> <span class="toc-text">Team Formation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Application-Description"><span class="toc-number">4.</span> <span class="toc-text">Application Description</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Problem-Statement"><span class="toc-number">4.1.</span> <span class="toc-text">Problem Statement</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Project-Description"><span class="toc-number">4.2.</span> <span class="toc-text">Project Description</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Marketing-Plan"><span class="toc-number">5.</span> <span class="toc-text">Marketing Plan</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Project-Implementation"><span class="toc-number">6.</span> <span class="toc-text">Project Implementation</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Implementation-Concept"><span class="toc-number">6.1.</span> <span class="toc-text">Implementation Concept</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lt-img-src-x3D-%E2%80%9D-x2F-media-x2F-image22-png%E2%80%9D"><span class="toc-number">6.2.</span> <span class="toc-text">&lt;img src&#x3D;”.&#x2F;media&#x2F;image22.png”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Software-Coding"><span class="toc-number">6.3.</span> <span class="toc-text">Software Coding</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">6.4.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-number">6.5.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Program-Testing"><span class="toc-number">6.6.</span> <span class="toc-text">Program Testing</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Challenges"><span class="toc-number">7.</span> <span class="toc-text">Challenges</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Creativity-and-Innovation"><span class="toc-number">8.</span> <span class="toc-text">Creativity and Innovation</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Creativity"><span class="toc-number">8.1.</span> <span class="toc-text">Creativity</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Innovation"><span class="toc-number">8.2.</span> <span class="toc-text">Innovation</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Machine-vision"><span class="toc-number">8.2.1.</span> <span class="toc-text">Machine vision:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conclusion"><span class="toc-number">9.</span> <span class="toc-text">Conclusion</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#youtube-demo"><span class="toc-number">10.</span> <span class="toc-text">youtube demo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Reference"><span class="toc-number">11.</span> <span class="toc-text">Reference</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/CQ_blog/2023/04/12/Automated%20checkout%20machine%20project/" title="No title">No title</a><time datetime="2023-04-12T15:38:16.144Z" title="Created 2023-04-12 23:38:16">2023-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CQ_blog/2023/04/05/Leetcode%20-%20575%20%20Distribute%20Candies/" title="Leetcode - 575  Distribute Candies."><img src="/CQ_blog/img/Leetcode.jpg" onerror="this.onerror=null;this.src='/CQ_blog/img/404.jpg'" alt="Leetcode - 575  Distribute Candies."/></a><div class="content"><a class="title" href="/CQ_blog/2023/04/05/Leetcode%20-%20575%20%20Distribute%20Candies/" title="Leetcode - 575  Distribute Candies.">Leetcode - 575  Distribute Candies.</a><time datetime="2023-04-05T15:42:46.000Z" title="Created 2023-04-05 23:42:46">2023-04-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CQ_blog/2023/04/05/%E8%B4%B4%E5%BF%83%E4%BF%9D%E5%A7%86%E7%BA%A7-Hexo-github-page-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E3%80%82/" title="贴心保姆级 Hexo &amp; github page 个人博客搭建教程。"><img src="/CQ_blog/img/HG.jpeg" onerror="this.onerror=null;this.src='/CQ_blog/img/404.jpg'" alt="贴心保姆级 Hexo &amp; github page 个人博客搭建教程。"/></a><div class="content"><a class="title" href="/CQ_blog/2023/04/05/%E8%B4%B4%E5%BF%83%E4%BF%9D%E5%A7%86%E7%BA%A7-Hexo-github-page-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E3%80%82/" title="贴心保姆级 Hexo &amp; github page 个人博客搭建教程。">贴心保姆级 Hexo &amp; github page 个人博客搭建教程。</a><time datetime="2023-04-05T15:42:46.000Z" title="Created 2023-04-05 23:42:46">2023-04-05</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Qian Nuowen</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/CQ_blog/js/utils.js"></script><script src="/CQ_blog/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
