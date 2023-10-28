@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Vins Fusion implementation on PC | CQ's blog</title><meta name="author" content="Qian Nuowen"><meta name="copyright" content="Qian Nuowen"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="hello word~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vins Fusion implementation on PC">
+<meta property="og:url" content="https://nuowenq.github.io/CQ_blog/2023/10/28/Vins_Fision_PC/index.html">
+<meta property="og:site_name" content="CQ&#39;s blog">
+<meta property="og:description" content="hello word~">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://nuowenq.github.io/CQ_blog/img/HG.jpeg">
+<meta property="article:published_time" content="2023-10-28T15:42:46.000Z">
+<meta property="article:modified_time" content="2023-10-28T15:47:21.128Z">
+<meta property="article:author" content="Qian Nuowen">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://nuowenq.github.io/CQ_blog/img/HG.jpeg"><link rel="shortcut icon" href="/CQ_blog/img/monkey.jpeg"><link rel="canonical" href="https://nuowenq.github.io/CQ_blog/2023/10/28/Vins_Fision_PC/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/CQ_blog/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/CQ_blog/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":false,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Vins Fusion implementation on PC',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-10-28 23:47:21'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/CQ_blog/img/monkey.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/CQ_blog/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/CQ_blog/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/CQ_blog/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/CQ_blog/"><i class="fa-fw fas fa-home"></i><span> Main</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> Blogs</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/CQ_blog/categories/"><i class="fa-fw fa fa-archive"></i><span> categories</span></a></li><li><a class="site-page child" href="/CQ_blog/tags/"><i class="fa-fw fa fa-tags"></i><span> tags</span></a></li><li><a class="site-page child" href="/CQ_blog/archives/"><i class="fa-fw fa fa-folder-open"></i><span> archieves</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> life</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/CQ_blog/shuoshuo/"><i class="fa-fw fa fa-comments-o"></i><span> sharing</span></a></li><li><a class="site-page child" href="/CQ_blog/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> album</span></a></li><li><a class="site-page child" href="/CQ_blog/music/"><i class="fa-fw fa fa-music"></i><span> music</span></a></li><li><a class="site-page child" href="/CQ_blog/movies/"><i class="fa-fw fas fa-video"></i><span> movies</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/CQ_blog/links/"><i class="fa-fw fa fa-link"></i><span> links</span></a></div><div class="menus_item"><a class="site-page" href="/CQ_blog/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> comment</span></a></div><div class="menus_item"><a class="site-page" href="/CQ_blog/about/"><i class="fa-fw fas fa-heart"></i><span> about</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/CQ_blog/img/HG.jpeg')"><nav id="nav"><span id="blog-info"><a href="/CQ_blog/" title="CQ's blog"><span class="site-name">CQ's blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/CQ_blog/"><i class="fa-fw fas fa-home"></i><span> Main</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> Blogs</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/CQ_blog/categories/"><i class="fa-fw fa fa-archive"></i><span> categories</span></a></li><li><a class="site-page child" href="/CQ_blog/tags/"><i class="fa-fw fa fa-tags"></i><span> tags</span></a></li><li><a class="site-page child" href="/CQ_blog/archives/"><i class="fa-fw fa fa-folder-open"></i><span> archieves</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> life</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/CQ_blog/shuoshuo/"><i class="fa-fw fa fa-comments-o"></i><span> sharing</span></a></li><li><a class="site-page child" href="/CQ_blog/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> album</span></a></li><li><a class="site-page child" href="/CQ_blog/music/"><i class="fa-fw fa fa-music"></i><span> music</span></a></li><li><a class="site-page child" href="/CQ_blog/movies/"><i class="fa-fw fas fa-video"></i><span> movies</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/CQ_blog/links/"><i class="fa-fw fa fa-link"></i><span> links</span></a></div><div class="menus_item"><a class="site-page" href="/CQ_blog/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> comment</span></a></div><div class="menus_item"><a class="site-page" href="/CQ_blog/about/"><i class="fa-fw fas fa-heart"></i><span> about</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Vins Fusion implementation on PC</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-10-28T15:42:46.000Z" title="Created 2023-10-28 23:42:46">2023-10-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-10-28T15:47:21.128Z" title="Updated 2023-10-28 23:47:21">2023-10-28</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/CQ_blog/categories/SAFMC-STUFF/">SAFMC_STUFF</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Vins Fusion implementation on PC"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><hr>
+<p><strong>This documentation records the steps to follow in order to implement DenseSurfelMapping algorithm with Vins fusion algorithm :</strong> </p>
+<p><a target="_blank" rel="noopener" href="https://github.com/HKUST-Aerial-Robotics/DenseSurfelMapping">https://github.com/HKUST-Aerial-Robotics/DenseSurfelMapping</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/HKUST-Aerial-Robotics/VINS-Fusion">https://github.com/HKUST-Aerial-Robotics/VINS-Fusion</a></p>
+<hr>
+<p><strong>Running on ubuntu 18.04 ROS melodic</strong></p>
+<p><strong>Prerequisites issues:</strong> </p>
+<p>**DO NOT FOLLOW INTERNET TO REMOVE ANYTHING like use :**<strong>sudo apt-get remove cmake</strong></p>
+<p>Cmake is at an older version therefore update is required, follow the following link:</p>
+<p>[<a target="_blank" rel="noopener" href="https://blog.csdn.net/PrideQ/article/details/122403993?ops_request_misc=&request_id=&biz_id=102&utm_term=Ubuntu%201804%20ros%20%E7%8E%AF%E5%A2%83%20%E6%80%8E%E4%B9%88%E5%8D%87%E7%BA%A7cmake&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-122403993.142%5Ev95%5Einsert_down28v1&spm=1018.2226.3001.4187%5D">https://blog.csdn.net/PrideQ/article/details/122403993?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=Ubuntu%201804%20ros%20%E7%8E%AF%E5%A2%83%20%E6%80%8E%E4%B9%88%E5%8D%87%E7%BA%A7cmake&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-122403993.142^v95^insert_down28v1&amp;spm=1018.2226.3001.4187]</a>(<a target="_blank" rel="noopener" href="https://blog.csdn.net/PrideQ/article/details/122403993?ops_request_misc=&request_id=&biz_id=102&utm_term=Ubuntu">https://blog.csdn.net/PrideQ/article/details/122403993?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=Ubuntu</a> 1804 ros 环境 怎么升级cmake&amp;utm_medium&#x3D;distribute.pc_search_result.none-task-blog-2<del>all</del>sobaiduweb~default-0-122403993.142^v95^insert_down28v1&amp;spm&#x3D;1018.2226.3001.4187)</p>
+<hr>
+<p><strong>Implement Vins fusion:</strong> </p>
+<p>NOTE: Install ceres 1.4, not 2.0. </p>
+<p>Potential error: error: ‘integer_sequence’ is not a member of ‘std’ struct SumImpl&lt;std::integer_sequence&lt;T, N, Ns…&gt;&gt;</p>
+<p>Solution : <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41586768/article/details/107541917">https://blog.csdn.net/qq_41586768/article/details/107541917</a></p>
+<p>Potential error: <strong>[XXX] is neither a launch file in package [XXX] nor is [XXX] a launch file name</strong></p>
+<p>Solution: source ~&#x2F;catkin_ws&#x2F;devel&#x2F;setup.bash </p>
+<p>(If sourcing multiple times and it still doesn’t work, try restarting the computer.)</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/haner27/article/details/104004745?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-13-104004745-blog-128344095.235%5Ev38%5Epc_relevant_anti_vip&spm=1001.2101.3001.4242.8&utm_relevant_index=16">https://blog.csdn.net/haner27/article/details/104004745?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-13-104004745-blog-128344095.235^v38^pc_relevant_anti_vip&amp;spm=1001.2101.3001.4242.8&amp;utm_relevant_index=16</a></p>
+<hr>
+<p><strong>Implement Vins fusion to D435i</strong></p>
+<p>After set up, and run with the rosbag, start to implement such algorithm with D435i: </p>
+<p>[<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_40904854/article/details/124390629?ops_request_misc=&request_id=&biz_id=102&utm_term=vins%20fusion%20%E5%AE%89%E8%A3%85%201804&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-124390629.nonecase&spm=1018.2226.3001.4187%5D">https://blog.csdn.net/qq_40904854/article/details/124390629?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=vins%20fusion%20%E5%AE%89%E8%A3%85%201804&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-124390629.nonecase&amp;spm=1018.2226.3001.4187]</a>(<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_40904854/article/details/124390629?ops_request_misc=&request_id=&biz_id=102&utm_term=vins">https://blog.csdn.net/qq_40904854/article/details/124390629?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=vins</a> fusion 安装 1804&amp;utm_medium&#x3D;distribute.pc_search_result.none-task-blog-2<del>all</del>sobaiduweb~default-1-124390629.nonecase&amp;spm&#x3D;1018.2226.3001.4187)</p>
+<hr>
+<p><strong>Mapping algorithms that are proven to work with Vins fusion + D435i:</strong> </p>
+<ul>
+<li>Octomap </li>
+<li><a target="_blank" rel="noopener" href="https://github.com/HKUST-Aerial-Robotics/FIESTA">Fiesta</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/HKUST-Aerial-Robotics/DenseSurfelMapping">DenseSurfelMapping</a></li>
+</ul>
+<hr>
+<p><strong>Implementing Dense surfel:</strong> </p>
+<p>[<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_62952541/article/details/131660425?ops_request_misc=&request_id=&biz_id=102&utm_term=dense%20surfel%20vins%20fusion%20&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-131660425.142%5Ev96%5Epc_search_result_base8&spm=1018.2226.3001.4187%5D">https://blog.csdn.net/weixin_62952541/article/details/131660425?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=dense%20surfel%20vins%20fusion%20&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-131660425.142^v96^pc_search_result_base8&amp;spm=1018.2226.3001.4187]</a>(<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_62952541/article/details/131660425?ops_request_misc=&request_id=&biz_id=102&utm_term=dense">https://blog.csdn.net/weixin_62952541/article/details/131660425?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=dense</a> surfel vins fusion &amp;utm_medium&#x3D;distribute.pc_search_result.none-task-blog-2<del>all</del>sobaiduweb~default-1-131660425.142^v96^pc_search_result_base8&amp;spm&#x3D;1018.2226.3001.4187)</p>
+<hr>
+<p><strong>Implementing Octomap:</strong></p>
+<p> NOTE: remember to turn off the rgbCloud and on the octofull, lastly save the configuration if you want. </p>
+<p>[<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_62952541/article/details/132154321?ops_request_misc=&request_id=&biz_id=102&utm_term=surfel%20fusion%20%E5%9C%B0%E5%9B%BE%E8%8E%B7%E5%8F%96&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-132154321.142%5Ev96%5Epc_search_result_base8&spm=1018.2226.3001.4187%5D">https://blog.csdn.net/weixin_62952541/article/details/132154321?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=surfel%20fusion%20%E5%9C%B0%E5%9B%BE%E8%8E%B7%E5%8F%96&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-132154321.142^v96^pc_search_result_base8&amp;spm=1018.2226.3001.4187]</a>(<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_62952541/article/details/132154321?ops_request_misc=&request_id=&biz_id=102&utm_term=surfel">https://blog.csdn.net/weixin_62952541/article/details/132154321?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=surfel</a> fusion 地图获取&amp;utm_medium&#x3D;distribute.pc_search_result.none-task-blog-2<del>all</del>sobaiduweb~default-0-132154321.142^v96^pc_search_result_base8&amp;spm&#x3D;1018.2226.3001.4187)</p>
+<hr>
+<p><strong>Four commands to run the D435i camera with vins fusion + DenseSurfelMapping algorithm:</strong></p>
+<ol>
+<li>roslaunch realsense2_camera rs_camera_vins2.launch</li>
+<li>rosrun vins vins_node ~&#x2F;catkin_ws&#x2F;src&#x2F;VINS-Fusion&#x2F;config&#x2F;realsense_d435i&#x2F;realsense_stereo_imu_config.yaml</li>
+<li>rosrun loop_fusion loop_fusion_node</li>
+</ol>
+<p>~&#x2F;catkin_ws&#x2F;src&#x2F;VINS-Fusion&#x2F;config&#x2F;realsense_d435i&#x2F;realsense_stereo_imu_config.yaml</p>
+<ol>
+<li>roslaunch surfel_fusion vins_realsense.launch</li>
+</ol>
+<p>Remark: Please run command 1 to command 4 ONE BY ONE, once the camera CONTINUOUSLY outputs error0 and does not lag, continue to run the next command. </p>
+<hr>
+<p><strong>Five commands to run the D435i camera with Vins fusion + Octomap algorithm:</strong></p>
+<ol>
+<li>roslaunch realsense2_camera rs_camera_vins2.launch</li>
+<li>rosrun vins vins_node ~&#x2F;catkin_ws&#x2F;src&#x2F;VINS-Fusion&#x2F;config&#x2F;realsense_d435i&#x2F;realsense_stereo_imu_config.yaml</li>
+<li>rosrun loop_fusion loop_fusion_node</li>
+</ol>
+<p>~&#x2F;catkin_ws&#x2F;src&#x2F;VINS-Fusion&#x2F;config&#x2F;realsense_d435i&#x2F;realsense_stereo_imu_config.yaml</p>
+<ol>
+<li>roslaunch surfel_fusion vins_realsense.launch</li>
+<li>roslaunch octomap_server octomap_mapping.launch</li>
+</ol>
+<p>Remark: Please run command 1 to command 5 ONE BY ONE, once the camera CONTINUOUSLY outputs error0 and does not lag, continue to run the next command. </p>
+<hr>
+<p>Outcomes:</p>
+<p><strong>Surfel map</strong></p>
+<p><img src="https://lh7-us.googleusercontent.com/vDiOIJiZvOtteqVJ3XKwJhwBiauzr6d5ZTTOm9XlrRoac_ci2ctoSQo2_tX0QzE_Zrysv0xu7Ji_SFelsy38YPXG_gPtgIWNfGzaNv1rCRNk2d7M1K3xB0DFSGtB6mFWhKARqd1uAxU5tJGjWgbmDAA" alt="img"></p>
+<p>Surfel map with rgbCloud (defualt) : </p>
+<p><img src="https://lh7-us.googleusercontent.com/ODCm4CoWLO2gJXShc-lJIFMi3mTh1k8Z5Ktb9IXolnTepRR_kcN-YPrNoI7rRGtPkaHPm1wp_WPDkTiuRFgvelTNRDApOFFtO09ubvFZIM0dsX-0EFyVISpfQM3QUojive9T_ipbmLYJ3_QdeB-PLcc" alt="img"></p>
+<p><strong>Octomap (recommended):</strong> </p>
+<p><img src="https://lh7-us.googleusercontent.com/QYmmWRXX8AOghItdj1mqKc2mop6fBwZnF67ETuwq5WhVU8mMAbYaqGQpoSRXXbBJJ6Xsc2E-jj6EycaTO-LYpEvhACnixGoHzV5wUwo5AF-QgacuVqnlGecdYF8GjcB4DHzjFaf0xlA9SKYEjpibOsM" alt="img"></p>
+<hr>
+<p>Commands to save the map</p>
+<ol>
+<li>rosrun octomap_server octomap_saver -f name_of_map.ot</li>
+<li>sudo apt-get install octovis</li>
+<li>octovis name_of_map.ot</li>
+</ol>
+<hr>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://nuowenq.github.io/CQ_blog">Qian Nuowen</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://nuowenq.github.io/CQ_blog/2023/10/28/Vins_Fision_PC/">https://nuowenq.github.io/CQ_blog/2023/10/28/Vins_Fision_PC/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/CQ_blog/img/HG.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/CQ_blog/2023/10/28/Update_Cmake/" title="Update Cmake"><img class="cover" src="/CQ_blog/img/HG.jpeg" onerror="onerror=null;src='/CQ_blog/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Update Cmake</div></div></a></div><div class="next-post pull-right"><a href="/CQ_blog/2023/04/12/Automated%20checkout%20machine%20project/" title="The automated checkout machine"><img class="cover" src="/CQ_blog/img/image75.jpeg" onerror="onerror=null;src='/CQ_blog/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">The automated checkout machine</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/CQ_blog/img/monkey.jpeg" onerror="this.onerror=null;this.src='/CQ_blog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Qian Nuowen</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/CQ_blog/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/CQ_blog/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/CQ_blog/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/NuowenQ/CQ_blog" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://blog.csdn.net/mjh1667002013" target="_blank" title="CSDN"><i class="fa fa-book-open"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=728831102&amp;website=www.oicqzone.com" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="mailto:1976083684@qq.com" target="_blank" title="Email"><i class="fas fa-envelope-open-text"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/CQ_blog/2023/10/28/Update_Cmake/" title="Update Cmake"><img src="/CQ_blog/img/HG.jpeg" onerror="this.onerror=null;this.src='/CQ_blog/img/404.jpg'" alt="Update Cmake"/></a><div class="content"><a class="title" href="/CQ_blog/2023/10/28/Update_Cmake/" title="Update Cmake">Update Cmake</a><time datetime="2023-10-28T15:42:46.000Z" title="Created 2023-10-28 23:42:46">2023-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CQ_blog/2023/10/28/Vins_Fision_PC/" title="Vins Fusion implementation on PC"><img src="/CQ_blog/img/HG.jpeg" onerror="this.onerror=null;this.src='/CQ_blog/img/404.jpg'" alt="Vins Fusion implementation on PC"/></a><div class="content"><a class="title" href="/CQ_blog/2023/10/28/Vins_Fision_PC/" title="Vins Fusion implementation on PC">Vins Fusion implementation on PC</a><time datetime="2023-10-28T15:42:46.000Z" title="Created 2023-10-28 23:42:46">2023-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CQ_blog/2023/04/12/Automated%20checkout%20machine%20project/" title="The automated checkout machine"><img src="/CQ_blog/img/image75.jpeg" onerror="this.onerror=null;this.src='/CQ_blog/img/404.jpg'" alt="The automated checkout machine"/></a><div class="content"><a class="title" href="/CQ_blog/2023/04/12/Automated%20checkout%20machine%20project/" title="The automated checkout machine">The automated checkout machine</a><time datetime="2023-04-12T15:38:16.144Z" title="Created 2023-04-12 23:38:16">2023-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CQ_blog/2023/04/05/Leetcode%20-%20575%20%20Distribute%20Candies/" title="Leetcode - 575  Distribute Candies."><img src="/CQ_blog/img/Leetcode.jpg" onerror="this.onerror=null;this.src='/CQ_blog/img/404.jpg'" alt="Leetcode - 575  Distribute Candies."/></a><div class="content"><a class="title" href="/CQ_blog/2023/04/05/Leetcode%20-%20575%20%20Distribute%20Candies/" title="Leetcode - 575  Distribute Candies.">Leetcode - 575  Distribute Candies.</a><time datetime="2023-04-05T15:42:46.000Z" title="Created 2023-04-05 23:42:46">2023-04-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CQ_blog/2023/04/05/%E8%B4%B4%E5%BF%83%E4%BF%9D%E5%A7%86%E7%BA%A7-Hexo-github-page-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E3%80%82/" title="贴心保姆级 Hexo &amp; github page 个人博客搭建教程。"><img src="/CQ_blog/img/HG.jpeg" onerror="this.onerror=null;this.src='/CQ_blog/img/404.jpg'" alt="贴心保姆级 Hexo &amp; github page 个人博客搭建教程。"/></a><div class="content"><a class="title" href="/CQ_blog/2023/04/05/%E8%B4%B4%E5%BF%83%E4%BF%9D%E5%A7%86%E7%BA%A7-Hexo-github-page-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%E3%80%82/" title="贴心保姆级 Hexo &amp; github page 个人博客搭建教程。">贴心保姆级 Hexo &amp; github page 个人博客搭建教程。</a><time datetime="2023-04-05T15:42:46.000Z" title="Created 2023-04-05 23:42:46">2023-04-05</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Qian Nuowen</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/CQ_blog/js/utils.js"></script><script src="/CQ_blog/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
